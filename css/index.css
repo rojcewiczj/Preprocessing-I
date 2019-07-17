@@ -265,11 +265,13 @@ footer p {
   .WorkHistory .skills {
     width: 100%;
   }
-  .intro {
+  .mainContent .intro {
     text-align: center;
+    width: 95%;
+    margin: 0 10px;
   }
-  .intro a {
+  .mainContent .intro a {
     display: block;
-    width: 40%;
+    width: 100px;
   }
 }
