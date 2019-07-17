@@ -136,9 +136,6 @@ body {
   height: 100%;
   background-color: #f1f1ee;
 }
-body * {
-  border: 1px solid grey;
-}
 nav {
   display: flex;
   flex-direction: row-reverse;
@@ -157,52 +154,122 @@ nav {
 .mainContent {
   width: 100%;
   height: 300px;
-  margin: 0 0 2% 0;
+  background-color: #f3f0ec;
 }
 .mainContent .intro {
-  margin: 5% 0% 5% 22% ;
+  border-left: 3px solid #e9c29e;
+  border-right: 3px solid #e9c29e;
+  margin: 0% 0% 0% 22% ;
   width: 50%;
-  height: 250px;
-  text-align: center;
+  height: 100%;
+  padding: 20px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .mainContent .intro h1 {
   font-size: 2rem;
-  margin: 5% auto;
+  margin: 5px auto;
   font-weight: 550;
 }
 .mainContent .intro h3 {
   font-size: 1.2rem;
   font-weight: 500;
+  display: inline-block;
 }
 .mainContent .intro p {
   display: inline-block;
+  text-align: center;
   width: 55%;
   margin: 2% 0 0 0;
 }
 .mainContent .intro a {
   display: inline-block;
-  background-color: #e9e1ca;
+  text-align: center;
+  background-color: #e9c29e;
   width: 30%;
-  margin: 8%;
+  margin: 30px;
   padding: 1%;
 }
 .aboutMe {
   width: 80%;
   height: 120px;
   margin: 2% 0 2% 11%;
+  border-left: 1px solid #e9c29e;
 }
 .aboutMe h2 {
   font-size: 1.6rem;
   font-weight: 500;
   margin: 0 0 2% 0%;
+  border-bottom: 1px solid #e9c29e;
+}
+.aboutMe p {
+  display: block;
+  margin: 0 2%;
 }
 .WorkHistory {
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 300px;
   justify-content: space-around;
   flex-direction: row-reverse;
 }
 .WorkHistory .skills {
-  width: 40%;
+  width: 50%;
+}
+.WorkHistory .jobs {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.WorkHistory .jobs h3 {
+  border-bottom: 1px solid #e9c29e;
+}
+.WorkHistory .jobs .Line {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  border-right: 1px solid #e9c29e;
+}
+.skills h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.skills p {
+  display: block;
+  margin: 3% 0;
+  background-color: #e9c29e;
+}
+.jobs h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: #e9c29e;
+}
+footer {
+  margin: 2% 0 2% 0%;
+}
+footer p {
+  display: block;
+  text-align: center;
+  margin: 2% ;
+  font-weight: 550;
+}
+@media screen and (max-width: 500px) {
+  .WorkHistory {
+    margin: 0 2% 0 2%;
+    flex-direction: column-reverse;
+  }
+  .WorkHistory .jobs {
+    width: 100%;
+  }
+  .WorkHistory .skills {
+    width: 100%;
+  }
+  .intro {
+    text-align: center;
+  }
+  .intro a {
+    display: block;
+    width: 40%;
+  }
 }
