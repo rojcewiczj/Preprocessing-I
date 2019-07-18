@@ -1,1 +1,273 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #f1f1ee;
+}
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: #faf5eb;
+  font-weight: 600;
+}
+.mainImg img {
+  width: 100%;
+  height: 50px;
+}
+.mainContent {
+  width: 100%;
+  height: 300px;
+  background-color: #f3f0ec;
+}
+.mainContent .intro {
+  border-left: 3px solid #e9c29e;
+  border-right: 3px solid #e9c29e;
+  margin: 0% 0% 0% 22% ;
+  width: 50%;
+  height: 100%;
+  padding: 20px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContent .intro h1 {
+  font-size: 2rem;
+  margin: 5px auto;
+  font-weight: 550;
+}
+.mainContent .intro h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.mainContent .intro p {
+  display: inline-block;
+  text-align: center;
+  width: 55%;
+  margin: 2% 0 0 0;
+}
+.mainContent .intro a {
+  display: inline-block;
+  text-align: center;
+  background-color: #e9c29e;
+  width: 30%;
+  margin: 30px;
+  padding: 1%;
+}
+.aboutMe {
+  width: 80%;
+  height: 120px;
+  margin: 2% 0 2% 11%;
+  border-left: 1px solid #e9c29e;
+}
+.aboutMe h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 2% 0%;
+  border-bottom: 1px solid #e9c29e;
+}
+.aboutMe p {
+  display: block;
+  margin: 0 2%;
+}
+.WorkHistory {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.WorkHistory .skills {
+  width: 50%;
+}
+.WorkHistory .jobs {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.WorkHistory .jobs h3 {
+  border-bottom: 1px solid #e9c29e;
+}
+.WorkHistory .jobs .Line {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  border-right: 1px solid #e9c29e;
+}
+.skills h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.skills p {
+  display: block;
+  margin: 3% 0;
+  background-color: #e9c29e;
+}
+.jobs h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: #e9c29e;
+}
+footer {
+  margin: 2% 0 2% 0%;
+}
+footer p {
+  display: block;
+  text-align: center;
+  margin: 2% ;
+  font-weight: 550;
+}
+@media screen and (max-width: 500px) {
+  .WorkHistory {
+    margin: 0 2% 0 2%;
+    flex-direction: column-reverse;
+  }
+  .WorkHistory .jobs {
+    width: 100%;
+  }
+  .WorkHistory .skills {
+    width: 100%;
+  }
+  .mainContent .intro {
+    text-align: center;
+    width: 95%;
+    margin: 0 10px;
+  }
+  .mainContent .intro a {
+    display: block;
+    width: 100px;
+  }
+}
